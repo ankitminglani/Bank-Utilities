@@ -1,66 +1,91 @@
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark ">
+  <!--navbar example : https://mdbootstrap.com/docs/standard/tools/builders/navbar/-->
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Bank Utilities</a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Link -->
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+        <!-- Dropdown -->
+
+      </ul>
+
+      <!-- Icons -->
+      <ul class="navbar-nav d-flex flex-row me-1">
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
 
 
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+<div class="container-fluid" style="margin-top: 10px">
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
           Fund Transfer
-        </button>
-      </h2>
-    </div>
+        </div>
+        <!--Later to add some good images or icons-->
+        <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+        <div class="card-body">
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HDFC</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SBI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ICICI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
+          <p class="card-text">Select a bank to fill in the NEFT/RTGS form.</p>
+        </div>
+       <div class="card-body">
+          <button type="button" class="btn pill-button btn-primary" routerLink="/hdfc-fund-transfer">HDFC</button>
+          <button type="button" class="btn pill-button btn-primary" routerLink="/sbi-fund-transfer">SBI</button>
 
 
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
           Deposit
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HDFC</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SBI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ICICI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-
+        </div>
+        <!--Later to add some good images or icons-->
+        <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+        <div class="card-body">
+          <p class="card-text">Select a bank to fill in the money deposit form.</p>
+        </div>
+       <div class="card-body">
+          <button type="button" class="btn pill-button btn-primary" routerLink="/hdfc-money-deposit">HDFC</button>
+          <button type="button" class="btn pill-button btn-primary" routerLink="/sbi-money-deposit">SBI</button>
+         
+        </div>
       </div>
     </div>
   </div>
+
+
+
+
+
 
 </div>
+
+
